@@ -1,0 +1,18 @@
+0_EP_runs/
+0_EP_runs
+# 0_figurs/
+0_old/
+0_other_analysis/
+0_overview
+0_papers/
+0_intermediate/
+0_KF_data/
+.claude
+pyfiles/0_EP_runs/
+__pycache__/
+eds_cache
+todo.txt
+CLAUDE.md
+2_1_input_computations.ipynb
+variation_patterns/*_2023_2024.txt
+variation_patterns/*_2025_2026.txt
