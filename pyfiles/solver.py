@@ -52,7 +52,7 @@ IMPORT_LIMIT_TWH = 0.0
 IMPORT_PENALTY   = 1e9
 BOUNDS_PENALTY   = 1e9
 
-VRE_RATE  = 145 / 7.45   # MEUR per TWh of VRE production  (DKK/MWh → MEUR/TWh)
+VRE_RATE  = 155 / 7.45   # MEUR per TWh of VRE production  (DKK/MWh → MEUR/TWh)
 KK_RATE   =  10 / 7.45   # MEUR per TWh of nuclear production
 CSHP_EXCL = "Indust. CHP Heat"   # investment row to subtract from TAC
 

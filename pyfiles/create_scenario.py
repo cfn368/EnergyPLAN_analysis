@@ -35,7 +35,7 @@ BASE_CASE_PARAMS = {
     'input_storage_pump_cap'    : 20,           # batteries                         # ET
 
     'input_RES1_factor'         : 800/1000,     # onshore wind                      # KF26            
-    'input_RES2_factor'         : 360/1000,     # offshore wind                     # KF26            
+    'input_RES2_factor'         : 380/1000,     # offshore wind                     # KF26            
     'input_RES3_factor'         : 500/1000,     # solar PV                          # KF26            
 }
 
@@ -51,7 +51,7 @@ SHOCK_CASE_PARAMS = {
     'input_storage_pump_cap'    : 18,           # batteries                         # endogenous FOA
 
     'input_RES1_factor'         : 800/1000,     # onshore wind                      # KF26            
-    'input_RES2_factor'         : 360/1000,     # offshore wind                     # KF26            
+    'input_RES2_factor'         : 380/1000,     # offshore wind                     # KF26            
     'input_RES3_factor'         : 500/1000,     # solar PV                          # KF26            
 } 
 
@@ -104,7 +104,7 @@ BASE_PARAMS = {
     # ToT
     'input_VC_turbine'          : 0,            # import price EUR/MWh              # ET
     'input_VC_pump'             : 0,            # export price EUR/MWh              # ET
-    'input_nordpool_mult_fac'   : 112/1000,     # average external market price     # KF26          
+    'input_nordpool_mult_fac'   : 105/1000,     # average external market price     # KF26          
 }
 
 
