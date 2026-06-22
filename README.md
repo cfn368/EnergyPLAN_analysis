@@ -38,7 +38,7 @@ An iterative Nelder-Mead optimisation (`2_2_optimiser.ipynb`) finds the backup p
 TC5 = TAC − I_CSHP + Q_VRE × (145/7.45) + Q_KK × (10/7.45)
 ```
 
-where TAC is EnergyPLAN's total annual cost, I_CSHP is the CSHP investment double-count, and the last two terms are external system costs at 145 DKK/MWh for VRE and 10 DKK/MWh for nuclear. (EnergyPLAN's electricity exchange cost is already part of TAC and is not added separately.) The optimisation is solved independently for each scenario.
+where TAC is EnergyPLAN's total annual cost, I_CSHP is the CSHP investment double-count, and the last two terms are external system costs at 155 DKK/MWh for VRE and 10 DKK/MWh for nuclear. (EnergyPLAN's electricity exchange cost is already part of TAC and is not added separately.) The optimisation is solved independently for each scenario.
 
 ### Cost decomposition
 
@@ -121,8 +121,6 @@ EnergyPLAN itself and all scenario `.txt` / distribution `.txt` files live outsi
 
 1. **`1_get_vp.ipynb`** — Fetch EDS hourly data and write EP distribution files for the chosen data year (currently 2024/2025). Results are cached in `0_intermediate/`.
 
-2. **`2_1_input_computations.ipynb`** — Compute derived inputs (correction factors, capacity factors, CHSP capacity, gas price, O&M fractions). Outputs inform the parameter dicts in `pyfiles/create_scenario.py`.
-
 3. **`2_2_optimiser.ipynb`** — Run Nelder-Mead to find the PP2, ELT, and H₂St capacities that jointly minimise the 5_cost_decomposition metric (TC5) for each scenario. Calls `create_scenarios()` internally — no separate scenario-creation step needed.
 
 **Each analysis run:**
@@ -177,7 +175,7 @@ EnergyPLAN output is written as parquet to `0_EP_runs/` (gitignored). Each run p
 | File | Description |
 |------|-------------|
 | Publication | Full analysis, assumptions, optimisation strategy, and scenario design (Danish) |
-| ET system cost working paper | Source for the 145 / 10 DKK/MWh system cost add-ons |
+| ET system cost working paper | Source for the 155 / 10 DKK/MWh system cost add-ons |
 
 ---
 
